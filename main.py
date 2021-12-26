@@ -30,10 +30,11 @@ def get_depickled_json():
     )
 
 
-def depickle():
+def depickle(_):
     addons_json.upload_from_string(
         get_depickled_json(), content_type="application/json"
     )
+    return ""
 
 
 if __name__ == "__main__":
